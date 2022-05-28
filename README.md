@@ -1,7 +1,7 @@
 ## 天池电商搜索挑战赛
 https://tianchi.aliyun.com/competition/entrance/531946/information
 
-初赛66名(0.274), 复赛16名(0.344)
+初赛66名(0.274), 复赛16名(其中召回使用难样本后0.296, 排序最终0.344)
 
 ### 安装依赖
 初赛(src/recall)使用的bert4keras包，复赛(src/rank)由于官方要求使用的TensorFlow，本代码tf1.14可以跑通。
