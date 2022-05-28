@@ -1,0 +1,17 @@
+python train_with_hard.py \
+    --model_name roformer_sim_ft \
+    --base_model roformer \
+    --pooling_type cls \
+    --mode train \
+    --sample_num 0 \
+    --dropout_rate 0 \
+    --train_batch_size 48 \
+    --epoch 2 \
+    --learning_rate 1e-5 \
+    --use_ecom \
+    --use_video \
+    --stage1_model_path /root/autodl-tmp/alibaba/data/models/roformer_sim_ft_sample_10w_0_lr1e-05_drop0.0_pt_cls_ecom_True_video_True_fgm_False_lrdecay_False_augfalse_hard9_/epoch0 \
+    --hard_encode_data_path /root/autodl-tmp/alibaba/data/models/roformer_sim_ft_sample_10w_0_lr1e-05_drop0.0_pt_cls_ecom_True_video_True_fgm_True_lrdecay_False/epoch4/hard_triple_encode_rank9_neg3.pkl \
+    --use_n_neg 1 \
+    --hard_neg_rank 9 \
+    --fgm > roformer.lr1e.drop0.cls.ecom.video.fgm.rank9.neg1.log 2>&1 &
