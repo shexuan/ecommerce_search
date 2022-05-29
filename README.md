@@ -29,7 +29,7 @@ pip install bert4keras
 - 先利用初赛模型生成复赛模型训练数据，对应`src/recall/gen_rank_data.sh`;
 - 利用初赛模型生成的样本训练复赛模型，对应`run_train.sh`。
 
-计算资源限制未进行太细致的调参，recall_size设置为10的时候复赛得分0.332，recall_size设置为20的时候复赛得分0.334。
+计算资源限制未进行太细致的调参，recall_size设置为10的时候复赛得分0.332，recall_size设置为20的时候复赛得分0.344。
 
 
 
